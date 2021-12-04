@@ -1,9 +1,9 @@
 <script>
-  import Easymde from "easymde"
-  import { onDestroy, onMount } from 'svelte';
-  import localforage from "localforage"
-  import { v4 as uuidv4 } from 'uuid';
-  import { navigate } from 'svelte-routing';
+  import Easymde from "easymde";
+  import { onDestroy, onMount } from "svelte";
+  import localforage from "localforage";
+  import { v4 as uuidv4 } from "uuid";
+  import { navigate } from "svelte-routing";
   let title;
   let easyMDE;
   onDestroy(() => {
@@ -20,16 +20,15 @@
       title,
       content: easyMDE.value(),
       date: Date.now(),
-    })
-    navigate(`/entry/${id}`)
-  }
+    });
+    navigate(`/entry/${id}`);
+  };
 </script>
-<main>
-    <h1>
-        Add log
-    </h1>
 
-    <input placeholder="Title" bind:value={title}/>
-    <textarea />
-    <button on:click={handleSave}>Save</button>
+<main>
+  <h1>Add log</h1>
+
+  <input placeholder="Title" bind:value={title} />
+  <textarea />
+  <button on:click={handleSave}>Save</button>
 </main>

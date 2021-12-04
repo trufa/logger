@@ -30,6 +30,8 @@
     "localforage": "^1.10.0",
     "luxon": "^2.1.1",
     "marked": "^4.0.6",
+    "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.5.0",
     "simplemde": "^1.11.2",
     "sirv-cli": "^1.0.0",
     "svelte-routing": "^1.6.0",
