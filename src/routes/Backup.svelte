@@ -14,7 +14,7 @@
   const createAndDownload = () => {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(entries));
     const dlAnchorElem = downloader;
-    dlAnchorElem.setAttribute("href",     dataStr     );
+    dlAnchorElem.setAttribute("href", dataStr);
     dlAnchorElem.setAttribute("download", "backup.json");
   }
 
@@ -29,7 +29,7 @@
     <h1>
         Backup
     </h1>
-    <button on:click={createAndDownload} bind:this={downloader}>Download</button>
+    <a href="{'#'}" on:click={createAndDownload} bind:this={downloader}>Download</a>
     <h3>Restore from JSON</h3>
     <div class="red">Make sure to restore proper JSON or your data may be lost</div>
     <div>
