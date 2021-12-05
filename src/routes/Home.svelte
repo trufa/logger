@@ -65,7 +65,7 @@
 
 <style>
   .content {
-    height: 400px;
+    max-height: 400px;
     overflow: scroll;
     margin-bottom: 20px;
     display: none;

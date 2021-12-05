@@ -22,6 +22,7 @@
       title,
       content: easyMDE.value(),
       date: Date.now(),
+      history: [],
     });
     navigate(`/entry/${id}`);
   };
