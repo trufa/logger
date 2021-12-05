@@ -11,7 +11,9 @@
     easyMDE = null;
   });
   onMount(async () => {
-    easyMDE = new Easymde();
+    easyMDE = new Easymde({
+      autoDownloadFontAwesome: false,
+    });
   });
   const handleSave = async () => {
     const id = uuidv4();

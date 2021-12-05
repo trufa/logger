@@ -23,6 +23,7 @@
     const data = await localforage.getItem(id);
     title = data.title;
     easyMDE = new Easymde({
+      autoDownloadFontAwesome: false,
       hideIcons: ["preview"],
     });
     easyMDE.value(data.content);

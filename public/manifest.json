@@ -1,0 +1,7 @@
+{
+  "name": "SVELTE-PWA",
+  "short_name": "SVELTE-PWA",
+  "icons": [],
+  "start_url": "/index.html",
+  "display": "standalone"
+}

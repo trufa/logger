@@ -11,7 +11,6 @@
   let searchString = "";
   onMount(async () => {
     await localforage.iterate((x) => {
-      console.log("adding", x);
       entries.push(x);
     });
     entries = entries;
